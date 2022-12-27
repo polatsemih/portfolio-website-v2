@@ -15,7 +15,7 @@
   --color-menu: rgba(255, 255, 255, 0.1);
   --color-sticky-menu: rgba(0, 0, 0, 0.9);
 
-  --height-menu: 10rem;
+  --height-menu: 15rem;
   --height-sticky-menu: calc(var(--height-menu) - 2rem);
   --height-job-slide: 8rem;
   --size-arrow: 2.5rem;
@@ -1123,6 +1123,10 @@ footer .back-to-top.active {
 }
 
 @media only screen and (min-width: 768px) {
+  :root {
+    --height-menu: 10rem;
+  }
+
   .home h1 {
     font-size: 10rem;
   }
