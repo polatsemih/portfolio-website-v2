@@ -7,24 +7,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Merhaba ben Semih. Full Stack Web Developer'ım. Projelerime göz atabilirsiniz ve iş görüşmesi için mail adresimden bana ulaşabilirsiniz." />
-    <meta name="keywords" content="semih polat, portfolyö, full stack web developer, site yapımı, site tasarımı" />
     <meta name="robots" content="all" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://polatsemih.com/assets/images/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://polatsemih.com/assets/images/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://polatsemih.com/assets/images/favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="https://polatsemih.com/assets/images/favicon_io/site.webmanifest" />
+    <meta name="description" content="Merhaba ben Semih. Sıfırdan, komple internet sitesi geliştiriyorum. Projelerime göz atabilirsiniz ve iş görüşmesi için mail adresimden bana ulaşabilirsiniz." />
+    <meta name="keywords" content="semih polat, web site yapımı, web site tasarımı, full stack web developer, front end web developer, back end web developer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Shadows+Into+Ligh&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/98641318fe.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://polatsemih.com/assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body class="locked">
-    <div class="loader-wrapper active">
-        <div class="loader">
+    <div class="loader active">
+        <div class="wrapper">
             <div class="circle circle-one"></div>
             <div class="circle circle-two"></div>
         </div>
@@ -32,421 +31,327 @@
     <header>
         <nav>
             <div class="menu">
-                <div id="link-home" class="link selected">Anasayfa</div>
-                <div id="link-about" class="link">Hakkımda</div>
-                <div id="link-skills" class="link">Becerilerim</div>
-                <div id="link-projects" class="link">Projelerim</div>
+                <div id="link1" class="link menu-link selected" data-id="1">Anasayfa</div>
+                <div id="link2" class="link menu-link" data-id="2">Hakkımda</div>
+                <div id="link3" class="link menu-link" data-id="3">Paketler</div>
+                <div id="link4" class="link menu-link" data-id="4">Projelerim</div>
             </div>
             <div class="progress-bar"></div>
         </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="section1" data-id="1">
             <div class="container">
                 <h1>Semih Polat</h1>
                 <div class="job-title">Full Stack Web Developer</div>
                 <div class="job-slide">
-                    <div class="job">Front End Developer</div>
-                    <div class="job">Back End Developer</div>
+                    <div class="job">Front End Web Developer</div>
+                    <div class="job">Back End Web Developer</div>
                     <div class="job">Penetration Tester</div>
                 </div>
-                <div class="continue">
+                <div id="browse">
                     <div class="arrow arrow-1"></div>
                     <div class="arrow arrow-2"></div>
                     <div class="arrow arrow-3"></div>
                 </div>
             </div>
         </section>
-        <section class="common about">
+        <section id="section2" data-id="2">
             <div class="container">
-                <div class="left reveal reveal-bottom">
-                    <div>
+                <h2>HAKKIMDA</h2>
+                <div class="row">
+                    <div class="left reveal reveal-bottom">
                         <h3>Merhaba, Ben Semih</h3>
-                        <p>Sıfırdan, hazır kütüphane kullanmadan statik veya dinamik bir internet sitesini
-                            geliştirebilmek için gerekli donanıma sahibim.</p>
-                        <p>Front-End: HTML, CSS, JS</p>
-                        <p>Back-End: PHP, MySQLi</p>
-                        <p>İş görüşmesi ve teklif için bana <a class="link"
-                                href="mailto:polatsemih@protonmail.com">polatsemih@protonmail.com</a> mail adresimden
-                            ulaşabilirsiniz.</p>
-                        <p>Yaş: 21</p>
-                        <p>Eğitim: Bilgisayar Mühendisi 3. Sınıf</p>
-                        <p>Lindekin: <a class="link" href="https://linkedin.com/in/polatsemih"
-                                target="_blank">https://linkedin.com/in/polatsemih</a></p>
-                        <p>Github: <a class="link" href="https://github.com/polatsemih"
-                                target="_blank">https://github.com/polatsemih</a></p>
+                        <p>Sıfırdan, komple bir internet sitesini geliştirebilmek için gerekli donanıma sahibim.</p>
+                        <p>İstediğiniz <span>herhangi bir tasarım</span>ı size özel yapabilirim.</p>
+                        <p>İş teklifi için : <a class="contact" href="mailto:polatsemih@protonmail.com">polatsemih@protonmail.com</a></p>
+                        <a class="socials" href="https://polatsemih.github.io" target="_blank">
+                            <i class="fa-solid fa-id-card icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Özgeçmiş</div>
+                        </a>
+                        <a class="socials" href="https://linkedin.com/in/polatsemih" target="_blank">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Linkedin</div>
+                        </a>
+                        <a class="socials" href="https://github.com/polatsemih" target="_blank">
+                            <i class="fa-brands fa-square-github icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Github</div>
+                        </a>
                     </div>
-                </div>
-                <div class="right reveal reveal-bottom">
-                    <!-- <img class="profile-photo" src="" alt="Semih Polat"> -->
+                    <div class="right reveal reveal-bottom">
+                        <video class="profile-photo" src="assets/images/about.mp4" autoplay muted loop></video>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="common skills">
+        <section id="section3" data-id="3">
             <div class="container">
-                <div class="row">
-                    <div class="skill-box reveal reveal-bottom col-4 html">HTML5</div>
-                    <div class="skill-box reveal reveal-bottom col-4 css">CSS3</div>
-                    <div class="skill-box reveal reveal-bottom col-4 js">JavaScript</div>
+                <h2>PAKETLER</h2>
+                <div class="wrapper">
+                    <div class="head"></div>
+                    <div class="body">
+                        <div class="top">
+                            <h3 class="title">Pro</h3>
+                            <div class="price">20.000 - 50.000 ₺</div>
+                        </div>
+                        <div class="top">
+                            <h3 class="title">Standart</h3>
+                            <div class="price">10.000 - 15.000 ₺</div>
+                        </div>
+                        <div class="top">
+                            <h3 class="title">Temel</h3>
+                            <div class="price">3.000 - 5.000 ₺</div>
+                            <div class="sticker">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="skill-box reveal reveal-bottom col-6 asp">ASP.NET Core 5</div>
-                    <div class="skill-box reveal reveal-bottom col-6 php">PHP</div>
+                <div class="wrapper">
+                    <div class="head">Kullanım Alanı</div>
+                    <div class="body">
+                        <div class="text">E-Ticaret, Blog Siteleri İçin İdeal</div>
+                        <div class="text">Ön Tasarımı (Front End) Yapılacak Siteler İçin İdeal</div>
+                        <div class="text">Tanıtım Siteleri İçin İdeal</div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="skill-box reveal reveal-bottom col-4 mysqli">MySQLi</div>
-                    <div class="skill-box reveal reveal-bottom col-4 mysqli">PDO</div>
-                    <div class="skill-box reveal reveal-bottom col-4 mvc">MVC</div>
+                <div class="wrapper">
+                    <div class="head">Site Türü</div>
+                    <div class="body">
+                        <div class="text">Dinamik</div>
+                        <div class="text">Statik</div>
+                        <div class="text">Statik</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="head">
+                        Sayfa Sayısı
+                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
+                        <div class="info">Yapılacak web sitesi için maksimum sayfa sayısını belirtir.</div>
+                    </div>
+                    <div class="body">
+                        <div class="text" title="Sınırsız"><i class="fa-solid fa-infinity"></i></div>
+                        <div class="text">10</div>
+                        <div class="text">1</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="head">Kişiye Özel Tasarım</div>
+                    <div class="body">
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="head">
+                        Responsive Tasarım
+                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
+                        <div class="info">Web sitenizi tüm cihazlarda sorunsuz kulanmanızı sağlayacak duyarlı tasarım seçeneğini içerir.</div>
+                    </div>
+                    <div class="body">
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="head">
+                        Revizyon
+                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
+                        <div class="info">Sipariş süreçlerinde revizyon genel anlamıyla sipariş sonundaki düzeltmeler anlamına gelmektedir. Burada belirtilen sayı kadar, tercih edilen son çalışma üzerinde düzeltme/düzenleme yapılır.</div>
+                    </div>
+                    <div class="body">
+                        <div class="text">5</div>
+                        <div class="text">3</div>
+                        <div class="text">1</div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="head">Teslim Süresi</div>
+                    <div class="body">
+                        <div class="text">2-4 Hafta</div>
+                        <div class="text">1-2 Hafta</div>
+                        <div class="text">1-7 Gün</div>
+                    </div>
+                </div>
+                <div class="note">
+                    ** Fiyatlandırmaya hosting, alan adı, ssl sertifikası ve diğer unsurlar dahil değildir.
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section id="section4" data-id="4">
+            <h2>PROJELERIM</h2>
             <div class="container">
-                <div class="project hovered reveal reveal-bottom" data-id="4">
-                    <div class="title-wrapper">
-                        <div class="title">
-                            <span class="brand">Retro Terminal</span>
+                <div class="row">
+                    <div class="project" data-id="2">
+                        <h5>Retro Terminal</h5>
+                        <img class="main-image" src="assets/images/project2/1.png" alt="Retro Terminal">
+                        <div class="bottom">
+                            <a href="https://retroterminal.com" target="_blank">https://retroterminal.com</a>
+                            <div class="details">
+                                Detaylar
+                                <i class="fas fa-chevron-right icon"></i>
+                            </div>
                         </div>
                     </div>
-                    <img class="project-main-image" src="https://polatsemih.com/assets/images/project4/1.png" alt="Retro Terminal">
-                    <div class="details">
-                        <div class="info-wrapper">
-                            <div class="date-wrapper">Tamamlanma Tarihi:<span class="ml">10/12/2022</span></div>
-                            <div class="back-end">Kullanılan Programlama Dili: <span class="ml">PHP</span></div>
-                            <div class="success">Yayında</div>
-                            <a class="project-link" href="https://retroterminal.com">https://retroterminal.com</a>
-                        </div>
-                        <div class="extend">
-                            Detaylar
-                            <i class="fas fa-chevron-right icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="project hovered reveal reveal-bottom" data-id="3">
-                    <div class="title-wrapper">
-                        <div class="title">
-                            <span class="brand">Blanck Basic</span>
-                            E-Ticaret Sitesi
-                        </div>
-                    </div>
-                    <img class="project-main-image" src="https://polatsemih.com/assets/images/project3/1.png" alt="Blanck Basic">
-                    <div class="details">
-                        <div class="info-wrapper">
-                            <div class="date-wrapper">Tamamlanma Tarihi:<span class="ml">18/10/2022</span></div>
-                            <div class="back-end">Kullanılan Programlama Dili: <span class="ml">PHP</span></div>
-                            <div class="danger">Yayında Değil</div>
-                        </div>
-                        <div class="extend">
-                            Detaylar
-                            <i class="fas fa-chevron-right icon"></i>
+                    <div class="project" data-id="1">
+                        <h5>Blanck Basic</h5>
+                        <img class="main-image" src="assets/images/project1/1.png" alt="Blanck Basic">
+                        <div class="bottom">
+                            <div class="details">
+                                Detaylar
+                                <i class="fas fa-chevron-right icon"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project hovered reveal reveal-bottom" data-id="2">
-                    <div class="title-wrapper">
-                        <div class="title">
-                            <span class="brand">SUP</span>
-                            Blog Sitesi
+                <div id="project-slider-2" class="project-slider">
+                    <div class="top">
+                        <div class="counter">
+                            <span class="current-image-count"></span>
+                            <span>/</span> 
+                            <span class="total-image-count"></span>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-chevron-left arrow left-arrow disable" data-id="2"></i>
+                            <i class="fas fa-chevron-right arrow right-arrow" data-id="2"></i>
+                            <i class="fas fa-times close"></i>
                         </div>
                     </div>
-                    <img class="project-main-image" src="https://polatsemih.com/assets/images/project2/1.png" alt="SUP">
-                    <div class="details">
-                        <div class="info-wrapper">
-                            <div class="date-wrapper">Tamamlanma Tarihi:<span class="ml">23/09/2021</span></div>
-                            <div class="back-end">Kullanılan Programlama Dili: <span class="ml">C# (ASP .NET Core
-                                    5)</span></div>
-                            <div class="danger">Yayında Değil</div>
-                            <a class="project-link"
-                                href="https://github.com/polatsemih/sup-blog-website">https://github.com/polatsemih/sup-blog-website</a>
-                        </div>
-                        <div class="extend">
-                            Detaylar
-                            <i class="fas fa-chevron-right icon"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="project hovered reveal reveal-bottom" data-id="1">
-                    <div class="title-wrapper">
-                        <div class="title">
-                            <span class="brand">Email Sender</span>
-                            Uygulaması
-                        </div>
-                    </div>
-                    <img class="project-main-image" src="https://polatsemih.com/assets/images/project1/1.png" alt="Email Sender">
-                    <div class="details">
-                        <div class="info-wrapper">
-                            <div class="date-wrapper">Tamamlanma Tarihi:<span class="ml">15/06/2021</span></div>
-                            <div class="back-end">Kullanılan Programlama Dili:<span class="ml">C#</span></div>
-                            <div class="danger">Yayında Değil</div>
-                            <a class="project-link"
-                                href="https://github.com/polatsemih/email-sender">https://github.com/polatsemih/email-sender</a>
-                        </div>
-                        <div class="extend">
-                            Detaylar
-                            <i class="fas fa-chevron-right icon"></i>
-                        </div>
+                    <div class="wrapper">
+                        <img class="project-image-1" src="assets/images/project2/1.png" alt="Retro Terminal 1">
+                        <img class="project-image-2" src="assets/images/project2/2.png" alt="Retro Terminal 2">
+                        <img class="project-image-3" src="assets/images/project2/3.png" alt="Retro Terminal 3">
+                        <img class="project-image-4" src="assets/images/project2/4.png" alt="Retro Terminal 4">
+                        <img class="project-image-5" src="assets/images/project2/5.png" alt="Retro Terminal 5">
+                        <img class="project-image-6" src="assets/images/project2/6.png" alt="Retro Terminal 6">
+                        <img class="project-image-7" src="assets/images/project2/7.png" alt="Retro Terminal 7">
+                        <img class="project-image-8" src="assets/images/project2/8.png" alt="Retro Terminal 8">
+                        <img class="project-image-9" src="assets/images/project2/9.png" alt="Retro Terminal 9">
+                        <img class="project-image-10" src="assets/images/project2/10.png" alt="Retro Terminal 10">
+                        <img class="project-image-11" src="assets/images/project2/11.png" alt="Retro Terminal 11">
+                        <img class="project-image-12" src="assets/images/project2/12.png" alt="Retro Terminal 12">
+                        <img class="project-image-13" src="assets/images/project2/13.png" alt="Retro Terminal 13">
+                        <img class="project-image-14" src="assets/images/project2/14.png" alt="Retro Terminal 14">
+                        <img class="project-image-15" src="assets/images/project2/15.png" alt="Retro Terminal 15">
                     </div>
                 </div>
-                <div id="project-slide-4" class="project-slider">
-                    <div class="container-slider">
-                        <i class="fas fa-times close-icon project-close" data-id="4"></i>
-                        <div class="image-wrapper">
-                            <i class="fas fa-chevron-right icon right-icon right-icon-4" data-id="4" data-max="14"></i>
-                            <i class="fas fa-chevron-left icon left-icon left-icon-4 disable" data-id="4"></i>
-                            <img class="project-image-4 project-image-4-1 active" src="https://polatsemih.com/assets/images/project4/1.png"
-                                alt="Retro Terminal 1">
-                            <img class="project-image-4 project-image-4-2" src="https://polatsemih.com/assets/images/project4/2.png"
-                                alt="Retro Terminal 2">
-                            <img class="project-image-4 project-image-4-3" src="https://polatsemih.com/assets/images/project4/3.png"
-                                alt="Retro Terminal 3">
-                            <img class="project-image-4 project-image-4-4" src="https://polatsemih.com/assets/images/project4/4.png"
-                                alt="Retro Terminal 4">
-                            <img class="project-image-4 project-image-4-5 active" src="https://polatsemih.com/assets/images/project4/5.png"
-                                alt="Retro Terminal 5">
-                            <img class="project-image-4 project-image-4-6 active" src="https://polatsemih.com/assets/images/project4/6.png"
-                                alt="Retro Terminal 6">
-                            <img class="project-image-4 project-image-4-7 active" src="https://polatsemih.com/assets/images/project4/7.png"
-                                alt="Retro Terminal 7">
-                            <img class="project-image-4 project-image-4-8 active" src="https://polatsemih.com/assets/images/project4/8.png"
-                                alt="Retro Terminal 8">
-                            <img class="project-image-4 project-image-4-9 active" src="https://polatsemih.com/assets/images/project4/9.png"
-                                alt="Retro Terminal 9">
-                            <img class="project-image-4 project-image-4-10 active" src="https://polatsemih.com/assets/images/project4/10.png"
-                                alt="Retro Terminal 10">
-                            <img class="project-image-4 project-image-4-11 active" src="https://polatsemih.com/assets/images/project4/11.png"
-                                alt="Retro Terminal 11">
-                            <img class="project-image-4 project-image-4-12 active" src="https://polatsemih.com/assets/images/project4/12.png"
-                                alt="Retro Terminal 12">
-                            <img class="project-image-4 project-image-4-13 active" src="https://polatsemih.com/assets/images/project4/13.png"
-                                alt="Retro Terminal 13">
-                            <img class="project-image-4 project-image-4-14 active" src="https://polatsemih.com/assets/images/project4/14.png"
-                                alt="Retro Terminal 14">
-                            <img class="project-image-4 project-image-4-15 active" src="https://polatsemih.com/assets/images/project4/15.png"
-                                alt="Retro Terminal 15">
+                <div id="project-slider-1" class="project-slider">
+                    <div class="top">
+                        <div class="counter">
+                            <span class="current-image-count"></span>
+                            <span>/</span> 
+                            <span class="total-image-count"></span>
+                        </div>
+                        <div class="actions">
+                            <i class="fas fa-chevron-left arrow left-arrow disable" data-id="1"></i>
+                            <i class="fas fa-chevron-right arrow right-arrow" data-id="1"></i>
+                            <i class="fas fa-times close"></i>
                         </div>
                     </div>
-                </div>
-                <div id="project-slide-3" class="project-slider">
-                    <div class="container-slider">
-                        <i class="fas fa-times close-icon project-close" data-id="3"></i>
-                        <div class="image-wrapper">
-                            <i class="fas fa-chevron-right icon right-icon right-icon-3" data-id="3" data-max="58"></i>
-                            <i class="fas fa-chevron-left icon left-icon left-icon-3 disable" data-id="3"></i>
-                            <img class="project-image-3 project-image-3-1 active" src="https://polatsemih.com/assets/images/project3/1.png"
-                                alt="Blanck Basic 1">
-                            <img class="project-image-3 project-image-3-2" src="https://polatsemih.com/assets/images/project3/2.png"
-                                alt="Blanck Basic 2">
-                            <img class="project-image-3 project-image-3-3" src="https://polatsemih.com/assets/images/project3/3.png"
-                                alt="Blanck Basic 3">
-                            <img class="project-image-3 project-image-3-4" src="https://polatsemih.com/assets/images/project3/4.png"
-                                alt="Blanck Basic 4">
-                            <img class="project-image-3 project-image-3-5" src="https://polatsemih.com/assets/images/project3/5.png"
-                                alt="Blanck Basic 5">
-                            <img class="project-image-3 project-image-3-6" src="https://polatsemih.com/assets/images/project3/6.png"
-                                alt="Blanck Basic 6">
-                            <img class="project-image-3 project-image-3-7" src="https://polatsemih.com/assets/images/project3/7.png"
-                                alt="Blanck Basic 7">
-                            <img class="project-image-3 project-image-3-8" src="https://polatsemih.com/assets/images/project3/8.png"
-                                alt="Blanck Basic 8">
-                            <img class="project-image-3 project-image-3-9" src="https://polatsemih.com/assets/images/project3/9.png"
-                                alt="Blanck Basic 9">
-                            <img class="project-image-3 project-image-3-10" src="https://polatsemih.com/assets/images/project3/10.png"
-                                alt="Blanck Basic 10">
-                            <img class="project-image-3 project-image-3-11" src="https://polatsemih.com/assets/images/project3/11.png"
-                                alt="Blanck Basic 11">
-                            <img class="project-image-3 project-image-3-12" src="https://polatsemih.com/assets/images/project3/12.png"
-                                alt="Blanck Basic 12">
-                            <img class="project-image-3 project-image-3-13" src="https://polatsemih.com/assets/images/project3/13.png"
-                                alt="Blanck Basic 13">
-                            <img class="project-image-3 project-image-3-14" src="https://polatsemih.com/assets/images/project3/14.png"
-                                alt="Blanck Basic 14">
-                            <img class="project-image-3 project-image-3-15" src="https://polatsemih.com/assets/images/project3/15.png"
-                                alt="Blanck Basic 15">
-                            <img class="project-image-3 project-image-3-16" src="https://polatsemih.com/assets/images/project3/16.png"
-                                alt="Blanck Basic 16">
-                            <img class="project-image-3 project-image-3-17" src="https://polatsemih.com/assets/images/project3/17.png"
-                                alt="Blanck Basic 17">
-                            <img class="project-image-3 project-image-3-18" src="https://polatsemih.com/assets/images/project3/18.png"
-                                alt="Blanck Basic 18">
-                            <img class="project-image-3 project-image-3-19" src="https://polatsemih.com/assets/images/project3/19.png"
-                                alt="Blanck Basic 19">
-                            <img class="project-image-3 project-image-3-20" src="https://polatsemih.com/assets/images/project3/20.png"
-                                alt="Blanck Basic 20">
-                            <img class="project-image-3 project-image-3-21" src="https://polatsemih.com/assets/images/project3/21.png"
-                                alt="Blanck Basic 21">
-                            <img class="project-image-3 project-image-3-22" src="https://polatsemih.com/assets/images/project3/22.png"
-                                alt="Blanck Basic 22">
-                            <img class="project-image-3 project-image-3-23" src="https://polatsemih.com/assets/images/project3/23.png"
-                                alt="Blanck Basic 23">
-                            <img class="project-image-3 project-image-3-24" src="https://polatsemih.com/assets/images/project3/24.png"
-                                alt="Blanck Basic 24">
-                            <img class="project-image-3 project-image-3-25" src="https://polatsemih.com/assets/images/project3/25.png"
-                                alt="Blanck Basic 25">
-                            <img class="project-image-3 project-image-3-26" src="https://polatsemih.com/assets/images/project3/26.png"
-                                alt="Blanck Basic 26">
-                            <img class="project-image-3 project-image-3-27" src="https://polatsemih.com/assets/images/project3/27.png"
-                                alt="Blanck Basic 27">
-                            <img class="project-image-3 project-image-3-28" src="https://polatsemih.com/assets/images/project3/28.png"
-                                alt="Blanck Basic 28">
-                            <img class="project-image-3 project-image-3-29" src="https://polatsemih.com/assets/images/project3/29.png"
-                                alt="Blanck Basic 29">
-                            <img class="project-image-3 project-image-3-30" src="https://polatsemih.com/assets/images/project3/30.png"
-                                alt="Blanck Basic 30">
-                            <img class="project-image-3 project-image-3-31" src="https://polatsemih.com/assets/images/project3/31.png"
-                                alt="Blanck Basic 31">
-                            <img class="project-image-3 project-image-3-32" src="https://polatsemih.com/assets/images/project3/32.png"
-                                alt="Blanck Basic 32">
-                            <img class="project-image-3 project-image-3-33" src="https://polatsemih.com/assets/images/project3/33.png"
-                                alt="Blanck Basic 33">
-                            <img class="project-image-3 project-image-3-34" src="https://polatsemih.com/assets/images/project3/34.png"
-                                alt="Blanck Basic 34">
-                            <img class="project-image-3 project-image-3-35" src="https://polatsemih.com/assets/images/project3/35.png"
-                                alt="Blanck Basic 35">
-                            <img class="project-image-3 project-image-3-36" src="https://polatsemih.com/assets/images/project3/36.png"
-                                alt="Blanck Basic 36">
-                            <img class="project-image-3 project-image-3-37" src="https://polatsemih.com/assets/images/project3/37.png"
-                                alt="Blanck Basic 37">
-                            <img class="project-image-3 project-image-3-38" src="https://polatsemih.com/assets/images/project3/38.png"
-                                alt="Blanck Basic 38">
-                            <img class="project-image-3 project-image-3-39" src="https://polatsemih.com/assets/images/project3/39.png"
-                                alt="Blanck Basic 39">
-                            <img class="project-image-3 project-image-3-40" src="https://polatsemih.com/assets/images/project3/40.png"
-                                alt="Blanck Basic 40">
-                            <img class="project-image-3 project-image-3-41" src="https://polatsemih.com/assets/images/project3/41.png"
-                                alt="Blanck Basic 41">
-                            <img class="project-image-3 project-image-3-42" src="https://polatsemih.com/assets/images/project3/42.png"
-                                alt="Blanck Basic 42">
-                            <img class="project-image-3 project-image-3-43" src="https://polatsemih.com/assets/images/project3/43.png"
-                                alt="Blanck Basic 43">
-                            <img class="project-image-3 project-image-3-44" src="https://polatsemih.com/assets/images/project3/44.png"
-                                alt="Blanck Basic 44">
-                            <img class="project-image-3 project-image-3-45" src="https://polatsemih.com/assets/images/project3/45.png"
-                                alt="Blanck Basic 45">
-                            <img class="project-image-3 project-image-3-46" src="https://polatsemih.com/assets/images/project3/46.png"
-                                alt="Blanck Basic 46">
-                            <img class="project-image-3 project-image-3-47" src="https://polatsemih.com/assets/images/project3/47.png"
-                                alt="Blanck Basic 47">
-                            <img class="project-image-3 project-image-3-48" src="https://polatsemih.com/assets/images/project3/48.png"
-                                alt="Blanck Basic 48">
-                            <img class="project-image-3 project-image-3-49" src="https://polatsemih.com/assets/images/project3/49.png"
-                                alt="Blanck Basic 49">
-                            <img class="project-image-3 project-image-3-50" src="https://polatsemih.com/assets/images/project3/50.png"
-                                alt="Blanck Basic 50">
-                            <img class="project-image-3 project-image-3-51" src="https://polatsemih.com/assets/images/project3/51.png"
-                                alt="Blanck Basic 51">
-                            <img class="project-image-3 project-image-3-52" src="https://polatsemih.com/assets/images/project3/52.png"
-                                alt="Blanck Basic 52">
-                            <img class="project-image-3 project-image-3-53" src="https://polatsemih.com/assets/images/project3/53.png"
-                                alt="Blanck Basic 53">
-                            <img class="project-image-3 project-image-3-54" src="https://polatsemih.com/assets/images/project3/54.png"
-                                alt="Blanck Basic 54">
-                            <img class="project-image-3 project-image-3-55" src="https://polatsemih.com/assets/images/project3/55.png"
-                                alt="Blanck Basic 55">
-                            <img class="project-image-3 project-image-3-56" src="https://polatsemih.com/assets/images/project3/56.png"
-                                alt="Blanck Basic 56">
-                            <img class="project-image-3 project-image-3-57" src="https://polatsemih.com/assets/images/project3/57.png"
-                                alt="Blanck Basic 57">
-                            <img class="project-image-3 project-image-3-58" src="https://polatsemih.com/assets/images/project3/58.png"
-                                alt="Blanck Basic 58">
-                            <img class="project-image-3 project-image-3-59" src="https://polatsemih.com/assets/images/project3/59.png"
-                                alt="Blanck Basic 59">
-                        </div>
-                    </div>
-                </div>
-                <div id="project-slide-2" class="project-slider">
-                    <div class="container-slider">
-                        <i class="fas fa-times close-icon project-close" data-id="2"></i>
-                        <div class="image-wrapper">
-                            <i class="fas fa-chevron-right icon right-icon right-icon-2" data-id="2" data-max="29"></i>
-                            <i class="fas fa-chevron-left icon left-icon left-icon-2 disable" data-id="2"></i>
-                            <img class="project-image-2 project-image-2-1 active" src="https://polatsemih.com/assets/images/project2/1.png"
-                                alt="SUP 1">
-                            <img class="project-image-2 project-image-2-2" src="https://polatsemih.com/assets/images/project2/2.png"
-                                alt="SUP 2">
-                            <img class="project-image-2 project-image-2-3" src="https://polatsemih.com/assets/images/project2/3.png"
-                                alt="SUP 3">
-                            <img class="project-image-2 project-image-2-4" src="https://polatsemih.com/assets/images/project2/4.png"
-                                alt="SUP 4">
-                            <img class="project-image-2 project-image-2-5" src="https://polatsemih.com/assets/images/project2/5.png"
-                                alt="SUP 5">
-                            <img class="project-image-2 project-image-2-6" src="https://polatsemih.com/assets/images/project2/6.png"
-                                alt="SUP 6">
-                            <img class="project-image-2 project-image-2-7" src="https://polatsemih.com/assets/images/project2/7.png"
-                                alt="SUP 7">
-                            <img class="project-image-2 project-image-2-8" src="https://polatsemih.com/assets/images/project2/8.png"
-                                alt="SUP 8">
-                            <img class="project-image-2 project-image-2-9" src="https://polatsemih.com/assets/images/project2/9.png"
-                                alt="SUP 9">
-                            <img class="project-image-2 project-image-2-10" src="https://polatsemih.com/assets/images/project2/10.png"
-                                alt="SUP 10">
-                            <img class="project-image-2 project-image-2-11" src="https://polatsemih.com/assets/images/project2/11.png"
-                                alt="SUP 11">
-                            <img class="project-image-2 project-image-2-12" src="https://polatsemih.com/assets/images/project2/12.png"
-                                alt="SUP 12">
-                            <img class="project-image-2 project-image-2-13" src="https://polatsemih.com/assets/images/project2/13.png"
-                                alt="SUP 13">
-                            <img class="project-image-2 project-image-2-14" src="https://polatsemih.com/assets/images/project2/14.png"
-                                alt="SUP 14">
-                            <img class="project-image-2 project-image-2-15" src="https://polatsemih.com/assets/images/project2/15.png"
-                                alt="SUP 15">
-                            <img class="project-image-2 project-image-2-16" src="https://polatsemih.com/assets/images/project2/16.png"
-                                alt="SUP 16">
-                            <img class="project-image-2 project-image-2-17" src="https://polatsemih.com/assets/images/project2/17.png"
-                                alt="SUP 17">
-                            <img class="project-image-2 project-image-2-18" src="https://polatsemih.com/assets/images/project2/18.png"
-                                alt="SUP 18">
-                            <img class="project-image-2 project-image-2-19" src="https://polatsemih.com/assets/images/project2/19.png"
-                                alt="SUP 19">
-                            <img class="project-image-2 project-image-2-20" src="https://polatsemih.com/assets/images/project2/20.png"
-                                alt="SUP 20">
-                            <img class="project-image-2 project-image-2-21" src="https://polatsemih.com/assets/images/project2/21.png"
-                                alt="SUP 21">
-                            <img class="project-image-2 project-image-2-22" src="https://polatsemih.com/assets/images/project2/22.png"
-                                alt="SUP 22">
-                            <img class="project-image-2 project-image-2-23" src="https://polatsemih.com/assets/images/project2/23.png"
-                                alt="SUP 23">
-                            <img class="project-image-2 project-image-2-24" src="https://polatsemih.com/assets/images/project2/24.png"
-                                alt="SUP 24">
-                            <img class="project-image-2 project-image-2-25" src="https://polatsemih.com/assets/images/project2/25.png"
-                                alt="SUP 25">
-                            <img class="project-image-2 project-image-2-26" src="https://polatsemih.com/assets/images/project2/26.png"
-                                alt="SUP 26">
-                            <img class="project-image-2 project-image-2-27" src="https://polatsemih.com/assets/images/project2/27.png"
-                                alt="SUP 27">
-                            <img class="project-image-2 project-image-2-28" src="https://polatsemih.com/assets/images/project2/28.png"
-                                alt="SUP 28">
-                            <img class="project-image-2 project-image-2-29" src="https://polatsemih.com/assets/images/project2/29.png"
-                                alt="SUP 29">
-                            <img class="project-image-2 project-image-2-30" src="https://polatsemih.com/assets/images/project2/30.png"
-                                alt="SUP 30">
-                        </div>
-                    </div>
-                </div>
-                <div id="project-slide-1" class="project-slider">
-                    <div class="container-slider">
-                        <i class="fas fa-times close-icon project-close" data-id="1"></i>
-                        <div class="image-wrapper">
-                            <i class="fas fa-chevron-right icon right-icon right-icon-1" data-id="1" data-max="3"></i>
-                            <i class="fas fa-chevron-left icon left-icon left-icon-1 disable" data-id="1"></i>
-                            <img class="project-image-1 project-image-1-1 active" src="https://polatsemih.com/assets/images/project1/1.png"
-                                alt="Email Sender 1">
-                            <img class="project-image-1 project-image-1-2" src="https://polatsemih.com/assets/images/project1/2.png"
-                                alt="Email Sender 2">
-                            <img class="project-image-1 project-image-1-3" src="https://polatsemih.com/assets/images/project1/3.png"
-                                alt="Email Sender 3">
-                            <img class="project-image-1 project-image-1-4" src="https://polatsemih.com/assets/images/project1/4.png"
-                                alt="Email Sender 4">
-                        </div>
+                    <div class="wrapper">
+                        <img class="project-image-1" src="assets/images/project1/1.png" alt="Blanck Basic 1">
+                        <img class="project-image-2" src="assets/images/project1/2.png" alt="Blanck Basic 2">
+                        <img class="project-image-3" src="assets/images/project1/3.png" alt="Blanck Basic 3">
+                        <img class="project-image-4" src="assets/images/project1/4.png" alt="Blanck Basic 4">
+                        <img class="project-image-5" src="assets/images/project1/5.png" alt="Blanck Basic 5">
+                        <img class="project-image-6" src="assets/images/project1/6.png" alt="Blanck Basic 6">
+                        <img class="project-image-7" src="assets/images/project1/7.png" alt="Blanck Basic 7">
+                        <img class="project-image-8" src="assets/images/project1/8.png" alt="Blanck Basic 8">
+                        <img class="project-image-9" src="assets/images/project1/9.png" alt="Blanck Basic 9">
+                        <img class="project-image-10" src="assets/images/project1/10.png" alt="Blanck Basic 10">
+                        <img class="project-image-11" src="assets/images/project1/11.png" alt="Blanck Basic 11">
+                        <img class="project-image-12" src="assets/images/project1/12.png" alt="Blanck Basic 12">
+                        <img class="project-image-13" src="assets/images/project1/13.png" alt="Blanck Basic 13">
+                        <img class="project-image-14" src="assets/images/project1/14.png" alt="Blanck Basic 14">
+                        <img class="project-image-15" src="assets/images/project1/15.png" alt="Blanck Basic 15">
+                        <img class="project-image-16" src="assets/images/project1/16.png" alt="Blanck Basic 16">
+                        <img class="project-image-17" src="assets/images/project1/17.png" alt="Blanck Basic 17">
+                        <img class="project-image-18" src="assets/images/project1/18.png" alt="Blanck Basic 18">
+                        <img class="project-image-19" src="assets/images/project1/19.png" alt="Blanck Basic 19">
+                        <img class="project-image-20" src="assets/images/project1/20.png" alt="Blanck Basic 20">
+                        <img class="project-image-21" src="assets/images/project1/21.png" alt="Blanck Basic 21">
+                        <img class="project-image-22" src="assets/images/project1/22.png" alt="Blanck Basic 22">
+                        <img class="project-image-23" src="assets/images/project1/23.png" alt="Blanck Basic 23">
+                        <img class="project-image-24" src="assets/images/project1/24.png" alt="Blanck Basic 24">
+                        <img class="project-image-25" src="assets/images/project1/25.png" alt="Blanck Basic 25">
+                        <img class="project-image-26" src="assets/images/project1/26.png" alt="Blanck Basic 26">
+                        <img class="project-image-27" src="assets/images/project1/27.png" alt="Blanck Basic 27">
+                        <img class="project-image-28" src="assets/images/project1/28.png" alt="Blanck Basic 28">
+                        <img class="project-image-29" src="assets/images/project1/29.png" alt="Blanck Basic 29">
+                        <img class="project-image-30" src="assets/images/project1/30.png" alt="Blanck Basic 30">
+                        <img class="project-image-31" src="assets/images/project1/31.png" alt="Blanck Basic 31">
+                        <img class="project-image-32" src="assets/images/project1/32.png" alt="Blanck Basic 32">
+                        <img class="project-image-33" src="assets/images/project1/33.png" alt="Blanck Basic 33">
+                        <img class="project-image-34" src="assets/images/project1/34.png" alt="Blanck Basic 34">
+                        <img class="project-image-35" src="assets/images/project1/35.png" alt="Blanck Basic 35">
+                        <img class="project-image-36" src="assets/images/project1/36.png" alt="Blanck Basic 36">
+                        <img class="project-image-37" src="assets/images/project1/37.png" alt="Blanck Basic 37">
+                        <img class="project-image-38" src="assets/images/project1/38.png" alt="Blanck Basic 38">
+                        <img class="project-image-39" src="assets/images/project1/39.png" alt="Blanck Basic 39">
+                        <img class="project-image-40" src="assets/images/project1/40.png" alt="Blanck Basic 40">
+                        <img class="project-image-41" src="assets/images/project1/41.png" alt="Blanck Basic 41">
+                        <img class="project-image-42" src="assets/images/project1/42.png" alt="Blanck Basic 42">
+                        <img class="project-image-43" src="assets/images/project1/43.png" alt="Blanck Basic 43">
+                        <img class="project-image-44" src="assets/images/project1/44.png" alt="Blanck Basic 44">
+                        <img class="project-image-45" src="assets/images/project1/45.png" alt="Blanck Basic 45">
+                        <img class="project-image-46" src="assets/images/project1/46.png" alt="Blanck Basic 46">
+                        <img class="project-image-47" src="assets/images/project1/47.png" alt="Blanck Basic 47">
+                        <img class="project-image-48" src="assets/images/project1/48.png" alt="Blanck Basic 48">
+                        <img class="project-image-49" src="assets/images/project1/49.png" alt="Blanck Basic 49">
+                        <img class="project-image-50" src="assets/images/project1/50.png" alt="Blanck Basic 50">
+                        <img class="project-image-51" src="assets/images/project1/51.png" alt="Blanck Basic 51">
+                        <img class="project-image-52" src="assets/images/project1/52.png" alt="Blanck Basic 52">
+                        <img class="project-image-53" src="assets/images/project1/53.png" alt="Blanck Basic 53">
+                        <img class="project-image-54" src="assets/images/project1/54.png" alt="Blanck Basic 54">
+                        <img class="project-image-55" src="assets/images/project1/55.png" alt="Blanck Basic 55">
+                        <img class="project-image-56" src="assets/images/project1/56.png" alt="Blanck Basic 56">
+                        <img class="project-image-57" src="assets/images/project1/57.png" alt="Blanck Basic 57">
+                        <img class="project-image-58" src="assets/images/project1/58.png" alt="Blanck Basic 58">
+                        <img class="project-image-59" src="assets/images/project1/59.png" alt="Blanck Basic 59">
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <span class="text">&#169; 2022 TÜM HAKLARI SAKLIDIR</span>
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <div class="brand">Semih Polat</div>
+                    <div class="contact-wrapper">İletişim : <a href="mailtopolatsemih@protonmail.com" class="contact">polatsemih@protonmail.com</a></div>
+                </div>
+                <div class="right">
+                    <div class="copyright">&#169; 2022 - 2023 TÜM HAKLARI SAKLIDIR</div>
+                    <div class="socials-wrapper">
+                        <a class="socials" href="https://polatsemih.github.io" target="_blank">
+                            <i class="fa-solid fa-id-card icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Özgeçmiş</div>
+                        </a>
+                        <a class="socials" href="https://linkedin.com/in/polatsemih" target="_blank">
+                            <i class="fa-brands fa-linkedin icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Linkedin</div>
+                        </a>
+                        <a class="socials" href="https://github.com/polatsemih" target="_blank">
+                            <i class="fa-brands fa-square-github icon"></i>
+                            <div class="hover-triangle"></div>
+                            <div class="text">Github</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="back-to-top"><i class="fas fa-angle-up"></i></div>
     </footer>
-    <script src="https://polatsemih.com/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

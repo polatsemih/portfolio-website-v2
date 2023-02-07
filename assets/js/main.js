@@ -1,37 +1,14 @@
-const bodyElement = document.querySelector('body');
-const loader = document.querySelector('.loader-wrapper');
+const bodyTag = document.querySelector('body');
+const loader = document.querySelector('.loader');
+const header = document.querySelector('header');
 window.onload = function () {
     if (loader.classList.contains('active')) {
         loader.classList.remove('active');
     }
-    if (bodyElement.classList.contains('locked')) {
-        bodyElement.classList.remove('locked');
+    if (bodyTag.classList.contains('locked')) {
+        bodyTag.classList.remove('locked');
     }
 };
-const linkHome = document.getElementById('link-home');
-const home = document.querySelector('.home');
-const linkAbout = document.getElementById('link-about');
-const about = document.querySelector('.about');
-const linkSkills = document.getElementById('link-skills');
-const skills = document.querySelector('.skills');
-const linkProjects = document.getElementById('link-projects');
-const projects = document.querySelector('.projects');
-linkHome.addEventListener('click', () => {
-    document.querySelector('.home').scrollIntoView();
-});
-linkAbout.addEventListener('click', () => {
-    about.scrollIntoView();
-});
-linkSkills.addEventListener('click', () => {
-    document.querySelector('.skills').scrollIntoView();
-});
-linkProjects.addEventListener('click', () => {
-    document.querySelector('.projects').scrollIntoView();
-});
-document.querySelector('.continue').addEventListener('click', () => {
-    about.scrollIntoView();
-});
-const header = document.querySelector('header');
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 0);
@@ -41,10 +18,35 @@ backToTop.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+const sections = document.querySelectorAll('section');
+const links = document.querySelectorAll('.menu-link');
+links.forEach(element => {
+    element.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('section' + element.dataset.id).scrollIntoView();
+        if (menu.classList.contains('active')) {
+            menu.classList.remove('active');
+        }
+        if (bodyTag.classList.contains('locked')) {
+            bodyTag.classList.remove('locked');
+        }
+    });
+});
 const progressBar = document.querySelector('.progress-bar');
-const links = document.querySelectorAll('.link');
-const reveals = document.querySelectorAll('.reveal');
+const sectionNumber = sections.length;
 window.addEventListener('scroll', () => {
+    sections.forEach(element => {
+        if ((element.offsetTop - window.scrollY) < 80) {
+            if (element.dataset.id <= sectionNumber) {
+                links.forEach(element => {
+                    if (element.classList.contains('selected')) {
+                        element.classList.remove('selected');
+                    }
+                });
+                document.getElementById('link' + element.dataset.id).classList.add('selected');
+            }
+        }
+    });
     let progressRatio = window.scrollY / (window.document.body.scrollHeight - window.innerHeight - 1);
     if (progressRatio > 1) {
         progressRatio = 1;
@@ -52,39 +54,7 @@ window.addEventListener('scroll', () => {
         progressRatio = 0;
     }
     progressBar.style.width = (progressRatio * 100) + '%';
-    if ((home.offsetTop - window.scrollY) < 0) {
-        links.forEach(element => {
-            if (element.classList.contains('selected')) {
-                element.classList.remove('selected');
-            }
-        });
-        linkHome.classList.add('selected');
-    }
-    if ((about.offsetTop - window.scrollY) < 80) {
-        links.forEach(element => {
-            if (element.classList.contains('selected')) {
-                element.classList.remove('selected');
-            }
-        });
-        linkAbout.classList.add('selected');
-    }
-    if ((skills.offsetTop - window.scrollY) < 80) {
-        links.forEach(element => {
-            if (element.classList.contains('selected')) {
-                element.classList.remove('selected');
-            }
-        });
-        linkSkills.classList.add('selected');
-    }
-    if ((projects.offsetTop - window.scrollY) < 80) {
-        links.forEach(element => {
-            if (element.classList.contains('selected')) {
-                element.classList.remove('selected');
-            }
-        });
-        linkProjects.classList.add('selected');
-    }
-    reveals.forEach(element => {
+    document.querySelectorAll('.reveal').forEach(element => {
         if (element.getBoundingClientRect().top < window.innerHeight - 30) {
             if (!element.classList.contains('active')) {
                 element.classList.add('active');
@@ -96,69 +66,81 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+document.getElementById('browse').addEventListener('click', () => {
+    document.getElementById('section2').scrollIntoView();
+});
 var index = 1;
 document.querySelectorAll('.project').forEach(element => {
     element.addEventListener('click', () => {
-        if (!bodyElement.classList.contains('locked')) {
-            bodyElement.classList.add('locked');
+        index = 1;
+        if (!bodyTag.classList.contains('locked')) {
+            bodyTag.classList.add('locked');
         }
-        if (!document.getElementById('project-slide-' + element.dataset.id).classList.contains('active')) {
-            document.getElementById('project-slide-' + element.dataset.id).classList.add('active');
+        let projectSlider = document.getElementById('project-slider-' + element.dataset.id);
+        if (!projectSlider.classList.contains('active')) {
+            projectSlider.classList.add('active');
         }
-        document.querySelectorAll('.project-image-' + element.dataset.id).forEach(image => {
+        let projectImages = document.querySelectorAll('#project-slider-' + element.dataset.id + ' img');
+        projectImages.forEach(image => {
             if (image.classList.contains('active')) {
                 image.classList.remove('active');
             }
         });
-        document.querySelector('.project-image-' + element.dataset.id + '-1').classList.add('active');
-        if (document.querySelector('.right-icon-' + element.dataset.id).classList.contains('disable')) {
-            document.querySelector('.right-icon-' + element.dataset.id).classList.remove('disable');
+        document.querySelector('#project-slider-' + element.dataset.id + ' .current-image-count').innerText = 1;
+        document.querySelector('#project-slider-' + element.dataset.id + ' .total-image-count').innerText = projectImages.length;
+        document.querySelector('#project-slider-' + element.dataset.id + ' .project-image-1').classList.add('active');
+        let rightArrow = document.querySelector('#project-slider-' + element.dataset.id + ' .right-arrow');
+        let leftArrow = document.querySelector('#project-slider-' + element.dataset.id + ' .left-arrow');
+        if (rightArrow.classList.contains('disable')) {
+            rightArrow.classList.remove('disable');
         }
-        if (!document.querySelector('.left-icon-' + element.dataset.id).classList.contains('disable')) {
-            document.querySelector('.left-icon-' + element.dataset.id).classList.add('disable');
-        }
-        index = 1;
-    });
-});
-document.querySelectorAll('.project-close').forEach(element => {
-    element.addEventListener('click', () => {
-        if (bodyElement.classList.contains('locked')) {
-            bodyElement.classList.remove('locked');
-        }
-        if (document.getElementById('project-slide-' + element.dataset.id).classList.contains('active')) {
-            document.getElementById('project-slide-' + element.dataset.id).classList.remove('active');
+        if (!leftArrow.classList.contains('disable')) {
+            leftArrow.classList.add('disable');
         }
     });
 });
-document.querySelectorAll('.right-icon').forEach(element => {
+document.querySelectorAll('.project-slider .close').forEach(element => {
     element.addEventListener('click', () => {
-        if (element.dataset.max >= index) {
-            if (element.nextElementSibling.classList.contains('disable')) {
-                element.nextElementSibling.classList.remove('disable')
+        if (bodyTag.classList.contains('locked')) {
+            bodyTag.classList.remove('locked');
+        }
+        if (element.parentElement.parentElement.parentElement.classList.contains('active')) {
+            element.parentElement.parentElement.parentElement.classList.remove('active');
+        }
+    });
+});
+document.querySelectorAll('.right-arrow').forEach(element => {
+    element.addEventListener('click', () => {
+        let totalImageCount = document.querySelectorAll('#project-slider-' + element.dataset.id + ' img').length;
+        if (totalImageCount > index) {
+            if (element.previousElementSibling.classList.contains('disable')) {
+                element.previousElementSibling.classList.remove('disable')
             }
-            let selectedImage = document.querySelector('.project-image-' + element.dataset.id + '-' + index);
+            let selectedImage = document.querySelector('#project-slider-' + element.dataset.id + ' .project-image-' + index);
             if (selectedImage.classList.contains('active')) {
                 selectedImage.classList.remove('active');
                 index++;
-                document.querySelector('.project-image-' + element.dataset.id + '-' + index).classList.add('active');
+                document.querySelector('#project-slider-' + element.dataset.id + ' .project-image-' + index).classList.add('active');
+                document.querySelector('#project-slider-' + element.dataset.id + ' .current-image-count').innerText = index;
             }
-            if (element.dataset.max < index) {
+            if (totalImageCount <= index) {
                 element.classList.add('disable');
             }
         }
     });
 });
-document.querySelectorAll('.left-icon').forEach(element => {
+document.querySelectorAll('.left-arrow').forEach(element => {
     element.addEventListener('click', () => {
         if (1 < index) {
-            if (element.previousElementSibling.classList.contains('disable')) {
-                element.previousElementSibling.classList.remove('disable')
+            if (element.nextElementSibling.classList.contains('disable')) {
+                element.nextElementSibling.classList.remove('disable')
             }
-            let selectedImage = document.querySelector('.project-image-' + element.dataset.id + '-' + index);
+            let selectedImage = document.querySelector('#project-slider-' + element.dataset.id + ' .project-image-' + index);
             if (selectedImage.classList.contains('active')) {
                 selectedImage.classList.remove('active');
                 index--;
-                document.querySelector('.project-image-' + element.dataset.id + '-' + index).classList.add('active');
+                document.querySelector('#project-slider-' + element.dataset.id + ' .project-image-' + index).classList.add('active');
+                document.querySelector('#project-slider-' + element.dataset.id + ' .current-image-count').innerText = index;
             }
             if (1 >= index) {
                 element.classList.add('disable');
@@ -166,6 +148,9 @@ document.querySelectorAll('.left-icon').forEach(element => {
         }
     });
 });
+document.querySelector('#section2 video').addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
 console.log('%cSemih Polat', 'font-size: 50px;font-weight: bold;color: #6466ec;text-shadow: 9px 9px 0 #6466ec32;');
 console.log('%cFull Stack Web Developer', 'font-size: 25px;color: #6466ec;');
-console.log('%ccontact => ' + '%cpolatsemih@protonmail.com', 'font-size: 20px;color: #aaaaaa;', 'font-size: 20px;color: #ffffff;');
+console.log('%ccontact => ' + '%cpolatsemih@protonmail.com', 'font-size: 20px;color: #aaaaaa;', 'font-size: 20px;color: #fd4432;');
