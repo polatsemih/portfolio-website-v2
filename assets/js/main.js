@@ -24,9 +24,6 @@ links.forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
         document.getElementById('section' + element.dataset.id).scrollIntoView();
-        if (menu.classList.contains('active')) {
-            menu.classList.remove('active');
-        }
         if (bodyTag.classList.contains('locked')) {
             bodyTag.classList.remove('locked');
         }
