@@ -1,4 +1,3 @@
-
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} ^polatsemih\.retroterminal\.com$ [OR]
@@ -16,9 +15,17 @@ RewriteRule ^polatsemih\.com\/?(.*)$ "https\:\/\/polatsemih\.com\/$1" [R=301,L]
 RewriteCond %{HTTP_HOST} www.polatsemih.com [nc]
 RewriteRule (.*) https://polatsemih.com/$1 [R=301,L]
 
+RewriteCond %{HTTP_HOST} polatsemih.retroterminal.com [nc]
+RewriteRule (.*) https://polatsemih.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} mail.polatsemih.com [nc]
+RewriteRule (.*) https://polatsemih.com/$1 [R=301,L]
+
 # Hotlink Protect
 RewriteCond %{HTTP_REFERER} !^https?://(.+\.)?polatsemih.com [NC]
 RewriteRule \.(gif|png|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|pdf)$ - [NC,F,L]
+
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
 Options -Indexes
 IndexIgnore *
