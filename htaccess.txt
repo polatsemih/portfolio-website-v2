@@ -25,6 +25,7 @@ RewriteRule (.*) https://polatsemih.com/$1 [R=301,L]
 RewriteCond %{HTTP_REFERER} !^https?://(.+\.)?polatsemih.com [NC]
 RewriteRule \.(gif|png|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|pdf)$ - [NC,F,L]
 
+# HSTS
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
 Options -Indexes
