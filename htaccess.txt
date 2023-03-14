@@ -28,6 +28,10 @@ RewriteRule \.(gif|png|jpg|jpeg|bmp|zip|rar|mp3|flv|swf|xml|pdf)$ - [NC,F,L]
 # HSTS
 Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
 
+# Header Unset
+Header always unset Server
+Header unset Server
+
 Options -Indexes
 IndexIgnore *
 Options +FollowSymLinks
