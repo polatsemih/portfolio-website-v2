@@ -1,373 +1,163 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
-    <title>Semih Polat</title>
-    <meta name="author" content="Semih Polat" />
+    <title>Portfolio of Semih Polat - Full Stack Web Developer</title>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="all" />
-    <meta name="description" content="Merhaba ben Semih. Sıfırdan, komple internet sitesi geliştiriyorum. Projelerime göz atabilir ve iş görüşmesi için bana ulaşabilirsiniz." />
-    <meta name="keywords" content="semih polat, web site yapımı, web site tasarımı, web developer, full stack, front end, back end" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest" />
+
+    <meta name="description" content="Welcome to the portfolio of Semih Polat, a passionate web developer showcasing a collection of his remarkable projects. Explore a diverse range of web applications, stunning websites, and innovative designs, each accompanied by captivating images that highlight their creativity and functionality. Discover the art of web development through Semih's work and get inspired for your own projects. Explore now!" />
+    <meta name="author" content="Semih Polat" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Shadows+Into+Ligh&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Rampart+One&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/98641318fe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body class="locked">
-    <div class="loader active">
-        <div class="wrapper">
-            <div class="circle circle-one"></div>
-            <div class="circle circle-two"></div>
-        </div>
-    </div>
+<body>
+    <div class="loader"></div>
     <header>
-        <nav>
-            <div class="menu">
-                <div id="link1" class="link menu-link selected" data-id="1">Anasayfa</div>
-                <div id="link2" class="link menu-link" data-id="2">Hakkımda</div>
-                <div id="link3" class="link menu-link" data-id="3">Paketler</div>
-                <div id="link4" class="link menu-link" data-id="4">Projelerim</div>
-            </div>
-            <div class="progress-bar"></div>
-        </nav>
+        <div class="container">
+            <div class="title">SUP</div>
+            <div class="pagination"></div>
+            <!-- <div class="languages">
+                <div class="languages_wrapper">
+                    <a href="#" class="language active">EN</a>
+                    <a href="#" class="language">TR</a>
+                </div>
+            </div> -->
+        </div>
     </header>
     <main>
-        <section id="section1" data-id="1">
+        <section class="home active">
             <div class="container">
-                <h1>Semih Polat</h1>
-                <div class="job-title">Full Stack Web Developer</div>
-                <div class="job-slide">
-                    <div class="job">Front End Web Developer</div>
-                    <div class="job">Back End Web Developer</div>
-                    <div class="job">Penetration Tester</div>
+                <h1 class="name">Semih Polat</h1>
+                <div class="job_title">Full Stack<br class="job_title_separator">Web Developer</br></div>
+                <div class="swipe">
+                    <div class="scroll_text">Swipe Down to Continue</div>
+                    <div class="lines">
+                        <div class="line line_left"></div>
+                        <div class="line line_right"></div>
+                    </div>
                 </div>
-                <div id="browse">
-                    <div class="arrow arrow-1"></div>
-                    <div class="arrow arrow-2"></div>
-                    <div class="arrow arrow-3"></div>
+                <div class="mouse">
+                    <div class="scroll_text">Scroll Down to Continue</div>
+                    <div class="mouse_top">
+                        <div class="mouse_top_left"></div>
+                        <div class="mouse_top_mid"></div>
+                        <div class="mouse_top_right"></div>
+                    </div>
+                    <div class="mouse_bottom"></div>
                 </div>
             </div>
         </section>
-        <section id="section2" data-id="2">
-            <div class="container">
-                <h2>HAKKIMDA</h2>
-                <div class="row">
-                    <div class="left reveal reveal-bottom">
-                        <h3>Merhaba, Ben Semih</h3>
-                        <p>Sıfırdan, komple bir internet sitesini geliştirebilmek için gerekli donanıma sahibim.</p>
-                        <p>İstediğiniz <span>herhangi bir tasarım</span>ı size özel yapabilirim.</p>
-                        <p>İş teklifi için : <a class="contact" href="mailto:polatsemih@protonmail.com">polatsemih@protonmail.com</a></p>
-                        <a class="socials" href="https://polatsemih.github.io" target="_blank">
-                            <i class="fa-solid fa-id-card icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Özgeçmiş</div>
-                        </a>
-                        <a class="socials" href="https://linkedin.com/in/polatsemih" target="_blank">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Linkedin</div>
-                        </a>
-                        <a class="socials" href="https://github.com/polatsemih" target="_blank">
-                            <i class="fa-brands fa-square-github icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Github</div>
-                        </a>
-                    </div>
-                    <div class="right reveal reveal-bottom">
-                        <video class="profile-photo" src="assets/images/about.mp4" autoplay muted loop></video>
-                    </div>
+        <section class="projects">
+            <div class="project active">
+                <h3>Retro Terminal v1</h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/retroterminal-v1/retroterminal-v1-1.png" alt="Retro Terminal V1">
+                </div>
+                <div class="card_footer">
+                    <a class="project_link" href="https://v1.retroterminal.com"
+                        target="_blank">https://v1.retroterminal.com</a>
                 </div>
             </div>
-        </section>
-        <section id="section3" data-id="3">
-            <div class="container">
-                <h2>PAKETLER</h2>
-                <div class="wrapper">
-                    <div class="head"></div>
-                    <div class="body">
-                        <div class="top">
-                            <h3 class="title">Pro</h3>
-                            <div class="price">25.000 - 100.000 ₺</div>
-                        </div>
-                        <div class="top">
-                            <h3 class="title">Standart</h3>
-                            <div class="price">15.000 - 25.000 ₺</div>
-                        </div>
-                        <div class="top">
-                            <h3 class="title">Temel</h3>
-                            <div class="price">5.000 - 15.000 ₺</div>
-                            <div class="sticker">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project">
+                <h3>Blanck Basic<br class="project_title_separator">E-commerce Website</br></h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/e-commerce-v1/e-commerce-v1-1.png" alt="E-commerce Website V1">
                 </div>
-                <div class="wrapper">
-                    <div class="head">Kullanım Alanı</div>
-                    <div class="body">
-                        <div class="text">E-Ticaret, Blog Siteleri İçin İdeal</div>
-                        <div class="text">Ön Tasarımı (Front End) Yapılacak Siteler İçin İdeal</div>
-                        <div class="text">Tanıtım Siteleri İçin İdeal</div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">Site Türü</div>
-                    <div class="body">
-                        <div class="text">Dinamik</div>
-                        <div class="text">Statik</div>
-                        <div class="text">Statik</div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">
-                        Sayfa Sayısı
-                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
-                        <div class="info">Yapılacak web sitesi için maksimum sayfa sayısını belirtir.</div>
-                    </div>
-                    <div class="body">
-                        <div class="text" title="Sınırsız"><i class="fa-solid fa-infinity"></i></div>
-                        <div class="text">10</div>
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">Kişiye Özel Tasarım</div>
-                    <div class="body">
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">
-                        Responsive Tasarım
-                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
-                        <div class="info">Web sitenizi tüm cihazlarda sorunsuz kulanmanızı sağlayacak duyarlı tasarım seçeneğini içerir.</div>
-                    </div>
-                    <div class="body">
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                        <div class="text"><i class="fa-regular fa-circle-check"></i></div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">
-                        SEO Danışmanlığı
-                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
-                        <div class="info">Web sitesi hakkında arama motorları için yapılan tüm iyileştirme çalışmalarıdır.</div>
-                    </div>
-                    <div class="body">
-                        <div class="text">Kısıtlı Danışmanlık</div>
-                        <div class="text">Kısıtlı Danışmanlık</div>
-                        <div class="text">Kısıtlı Danışmanlık</div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">
-                        Revizyon
-                        <i class="fa-sharp fa-solid fa-circle-info icon"></i>
-                        <div class="info">Sipariş süreçlerinde revizyon genel anlamıyla sipariş sonundaki düzeltmeler anlamına gelmektedir. Burada belirtilen sayı kadar, tercih edilen son çalışma üzerinde düzeltme/düzenleme yapılır.</div>
-                    </div>
-                    <div class="body">
-                        <div class="text">5</div>
-                        <div class="text">3</div>
-                        <div class="text">1</div>
-                    </div>
-                </div>
-                <div class="wrapper">
-                    <div class="head">Teslim Süresi</div>
-                    <div class="body">
-                        <div class="text">1 - 6 Ay</div>
-                        <div class="text">1 - 2 Hafta</div>
-                        <div class="text">1 - 7 Gün</div>
-                    </div>
-                </div>
-                <div class="note">
-                    ** Fiyatlandırmaya hosting, alan adı, ssl sertifikası ve diğer unsurlar dahil değildir.
+                <div class="card_footer">
+                    <a class="details" href="https://polatsemih.com/e-commerce-v1" target="_blank">
+                        Details
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section id="section4" data-id="4">
-            <h2>PROJELERIM</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="project" data-id="2">
-                        <h5>Retro Terminal</h5>
-                        <img class="main-image" src="assets/images/project2/h1.png" alt="Retro Terminal">
-                        <div class="bottom">
-                            <a href="https://retroterminal.com" target="_blank">https://retroterminal.com</a>
-                            <div class="details">
-                                Detaylar
-                                <i class="fas fa-chevron-right icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project" data-id="1">
-                        <h5>Blanck Basic</h5>
-                        <img class="main-image" src="assets/images/project1/1.png" alt="Blanck Basic">
-                        <div class="bottom">
-                            <div class="details">
-                                Detaylar
-                                <i class="fas fa-chevron-right icon"></i>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project">
+                <h3>Portfolio Website v1</h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/portfolio-v1/portfolio-v1-1.png" alt="Portfolio Website V1">
                 </div>
-                <div id="project-slider-2" class="project-slider">
-                    <div class="top">
-                        <div class="counter">
-                            <span class="current-image-count"></span>
-                            <span>/</span> 
-                            <span class="total-image-count"></span>
-                        </div>
-                        <div class="actions">
-                            <i class="fas fa-chevron-left arrow left-arrow disable" data-id="2"></i>
-                            <i class="fas fa-chevron-right arrow right-arrow" data-id="2"></i>
-                            <i class="fas fa-times close"></i>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <img class="project-image-1" src="assets/images/project2/h1.png" alt="Retro Terminal 1">
-                        <img class="project-image-2" src="assets/images/project2/h2.png" alt="Retro Terminal 2">
-                        <img class="project-image-3" src="assets/images/project2/a1.png" alt="Retro Terminal 3">
-                        <img class="project-image-4" src="assets/images/project2/a2.png" alt="Retro Terminal 4">
-                        <img class="project-image-5" src="assets/images/project2/a3.png" alt="Retro Terminal 5">
-                        <img class="project-image-6" src="assets/images/project2/a4.png" alt="Retro Terminal 6">
-                        <img class="project-image-7" src="assets/images/project2/a5.png" alt="Retro Terminal 7">
-                        <img class="project-image-8" src="assets/images/project2/a6.png" alt="Retro Terminal 8">
-                        <img class="project-image-9" src="assets/images/project2/m1.png" alt="Retro Terminal 9">
-                        <img class="project-image-10" src="assets/images/project2/m2.png" alt="Retro Terminal 10">
-                        <img class="project-image-11" src="assets/images/project2/m3.png" alt="Retro Terminal 11">
-                        <img class="project-image-12" src="assets/images/project2/m4.png" alt="Retro Terminal 12">
-                        <img class="project-image-13" src="assets/images/project2/m5.png" alt="Retro Terminal 13">
-                        <img class="project-image-14" src="assets/images/project2/m6.png" alt="Retro Terminal 14">
-                        <img class="project-image-15" src="assets/images/project2/m7.png" alt="Retro Terminal 15">
-                        <img class="project-image-16" src="assets/images/project2/m8.png" alt="Retro Terminal 16">
-                        <img class="project-image-17" src="assets/images/project2/s1.png" alt="Retro Terminal 17">
-                        <img class="project-image-18" src="assets/images/project2/s2.png" alt="Retro Terminal 18">
-                        <img class="project-image-19" src="assets/images/project2/s3.png" alt="Retro Terminal 19">
-                        <img class="project-image-20" src="assets/images/project2/s4.png" alt="Retro Terminal 20">
-                        <img class="project-image-21" src="assets/images/project2/s5.png" alt="Retro Terminal 21">
-                    </div>
+                <div class="card_footer">
+                    <a class="project_link" href="https://polatsemih.com/portfolio-v1"
+                        target="_blank">https://polatsemih.com/portfolio-v1</a>
                 </div>
-                <div id="project-slider-1" class="project-slider">
-                    <div class="top">
-                        <div class="counter">
-                            <span class="current-image-count"></span>
-                            <span>/</span> 
-                            <span class="total-image-count"></span>
-                        </div>
-                        <div class="actions">
-                            <i class="fas fa-chevron-left arrow left-arrow disable" data-id="1"></i>
-                            <i class="fas fa-chevron-right arrow right-arrow" data-id="1"></i>
-                            <i class="fas fa-times close"></i>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <img class="project-image-1" src="assets/images/project1/1.png" alt="Blanck Basic 1">
-                        <img class="project-image-2" src="assets/images/project1/2.png" alt="Blanck Basic 2">
-                        <img class="project-image-3" src="assets/images/project1/3.png" alt="Blanck Basic 3">
-                        <img class="project-image-4" src="assets/images/project1/4.png" alt="Blanck Basic 4">
-                        <img class="project-image-5" src="assets/images/project1/5.png" alt="Blanck Basic 5">
-                        <img class="project-image-6" src="assets/images/project1/6.png" alt="Blanck Basic 6">
-                        <img class="project-image-7" src="assets/images/project1/7.png" alt="Blanck Basic 7">
-                        <img class="project-image-8" src="assets/images/project1/8.png" alt="Blanck Basic 8">
-                        <img class="project-image-9" src="assets/images/project1/9.png" alt="Blanck Basic 9">
-                        <img class="project-image-10" src="assets/images/project1/10.png" alt="Blanck Basic 10">
-                        <img class="project-image-11" src="assets/images/project1/11.png" alt="Blanck Basic 11">
-                        <img class="project-image-12" src="assets/images/project1/12.png" alt="Blanck Basic 12">
-                        <img class="project-image-13" src="assets/images/project1/13.png" alt="Blanck Basic 13">
-                        <img class="project-image-14" src="assets/images/project1/14.png" alt="Blanck Basic 14">
-                        <img class="project-image-15" src="assets/images/project1/15.png" alt="Blanck Basic 15">
-                        <img class="project-image-16" src="assets/images/project1/16.png" alt="Blanck Basic 16">
-                        <img class="project-image-17" src="assets/images/project1/17.png" alt="Blanck Basic 17">
-                        <img class="project-image-18" src="assets/images/project1/18.png" alt="Blanck Basic 18">
-                        <img class="project-image-19" src="assets/images/project1/19.png" alt="Blanck Basic 19">
-                        <img class="project-image-20" src="assets/images/project1/20.png" alt="Blanck Basic 20">
-                        <img class="project-image-21" src="assets/images/project1/21.png" alt="Blanck Basic 21">
-                        <img class="project-image-22" src="assets/images/project1/22.png" alt="Blanck Basic 22">
-                        <img class="project-image-23" src="assets/images/project1/23.png" alt="Blanck Basic 23">
-                        <img class="project-image-24" src="assets/images/project1/24.png" alt="Blanck Basic 24">
-                        <img class="project-image-25" src="assets/images/project1/25.png" alt="Blanck Basic 25">
-                        <img class="project-image-26" src="assets/images/project1/26.png" alt="Blanck Basic 26">
-                        <img class="project-image-27" src="assets/images/project1/27.png" alt="Blanck Basic 27">
-                        <img class="project-image-28" src="assets/images/project1/28.png" alt="Blanck Basic 28">
-                        <img class="project-image-29" src="assets/images/project1/29.png" alt="Blanck Basic 29">
-                        <img class="project-image-30" src="assets/images/project1/30.png" alt="Blanck Basic 30">
-                        <img class="project-image-31" src="assets/images/project1/31.png" alt="Blanck Basic 31">
-                        <img class="project-image-32" src="assets/images/project1/32.png" alt="Blanck Basic 32">
-                        <img class="project-image-33" src="assets/images/project1/33.png" alt="Blanck Basic 33">
-                        <img class="project-image-34" src="assets/images/project1/34.png" alt="Blanck Basic 34">
-                        <img class="project-image-35" src="assets/images/project1/35.png" alt="Blanck Basic 35">
-                        <img class="project-image-36" src="assets/images/project1/36.png" alt="Blanck Basic 36">
-                        <img class="project-image-37" src="assets/images/project1/37.png" alt="Blanck Basic 37">
-                        <img class="project-image-38" src="assets/images/project1/38.png" alt="Blanck Basic 38">
-                        <img class="project-image-39" src="assets/images/project1/39.png" alt="Blanck Basic 39">
-                        <img class="project-image-40" src="assets/images/project1/40.png" alt="Blanck Basic 40">
-                        <img class="project-image-41" src="assets/images/project1/41.png" alt="Blanck Basic 41">
-                        <img class="project-image-42" src="assets/images/project1/42.png" alt="Blanck Basic 42">
-                        <img class="project-image-43" src="assets/images/project1/43.png" alt="Blanck Basic 43">
-                        <img class="project-image-44" src="assets/images/project1/44.png" alt="Blanck Basic 44">
-                        <img class="project-image-45" src="assets/images/project1/45.png" alt="Blanck Basic 45">
-                        <img class="project-image-46" src="assets/images/project1/46.png" alt="Blanck Basic 46">
-                        <img class="project-image-47" src="assets/images/project1/47.png" alt="Blanck Basic 47">
-                        <img class="project-image-48" src="assets/images/project1/48.png" alt="Blanck Basic 48">
-                        <img class="project-image-49" src="assets/images/project1/49.png" alt="Blanck Basic 49">
-                        <img class="project-image-50" src="assets/images/project1/50.png" alt="Blanck Basic 50">
-                        <img class="project-image-51" src="assets/images/project1/51.png" alt="Blanck Basic 51">
-                        <img class="project-image-52" src="assets/images/project1/52.png" alt="Blanck Basic 52">
-                        <img class="project-image-53" src="assets/images/project1/53.png" alt="Blanck Basic 53">
-                        <img class="project-image-54" src="assets/images/project1/54.png" alt="Blanck Basic 54">
-                        <img class="project-image-55" src="assets/images/project1/55.png" alt="Blanck Basic 55">
-                        <img class="project-image-56" src="assets/images/project1/56.png" alt="Blanck Basic 56">
-                        <img class="project-image-57" src="assets/images/project1/57.png" alt="Blanck Basic 57">
-                        <img class="project-image-58" src="assets/images/project1/58.png" alt="Blanck Basic 58">
-                        <img class="project-image-59" src="assets/images/project1/59.png" alt="Blanck Basic 59">
-                    </div>
+            </div>
+            <!-- <div class="project">
+                <h3>SUP<br class="project_title_separator">Blog Website</br></h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/blog-v1/blog-v1-1.png" alt="Blog Website V1">
+                </div>
+                <div class="card_footer">
+                    <a class="details" href="https://polatsemih.com/blog-v1" target="_blank">
+                        Details
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div> -->
+            <div class="project">
+                <h3>CV Website v2</h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/cv-v2/cv-v2-1.png" alt="CV Website V2">
+                </div>
+                <div class="card_footer">
+                    <a class="project_link" href="https://polatsemih.github.io/cv/en"
+                        target="_blank">https://polatsemih.github.io/cv/en</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>CV Website v1</h3>
+                <div class="image_wrapper">
+                    <img src="assets/images/cv-v1/cv-v1-1.png" alt="CV Website V1">
+                </div>
+                <div class="card_footer">
+                    <a class="project_link" href="https://polatsemih.com/cv-v1"
+                        target="_blank">https://polatsemih.com/cv-v1</a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="left">
-                    <div class="brand">Semih Polat</div>
-                    <div class="contact-wrapper">İletişim : <a href="mailtopolatsemih@protonmail.com" class="contact">polatsemih@protonmail.com</a></div>
-                </div>
-                <div class="right">
-                    <div class="copyright">&#169; 2022 - 2023 TÜM HAKLARI SAKLIDIR</div>
-                    <div class="socials-wrapper">
-                        <a class="socials" href="https://polatsemih.github.io" target="_blank">
-                            <i class="fa-solid fa-id-card icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Özgeçmiş</div>
-                        </a>
-                        <a class="socials" href="https://linkedin.com/in/polatsemih" target="_blank">
-                            <i class="fa-brands fa-linkedin icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Linkedin</div>
-                        </a>
-                        <a class="socials" href="https://github.com/polatsemih" target="_blank">
-                            <i class="fa-brands fa-square-github icon"></i>
-                            <div class="hover-triangle"></div>
-                            <div class="text">Github</div>
-                        </a>
+            <div class="copyright">
+                © 2022-2023 <br class="copyright_separator">ALL RIGHTS RESERVED</br>
+            </div>
+            <div class="socials">
+                <a class="social" href="https://polatsemih.github.io" target="_blank">
+                    <i class="fa-solid fa-id-card icon"></i>
+                    <div class="hover_triangle"></div>
+                    <div class="hover_text">
+                        <div class="text">CV</div>
                     </div>
-                </div>
+                </a>
+                <a class="social" href="https://linkedin.com/in/polatsemih" target="_blank">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                    <div class="hover_triangle"></div>
+                    <div class="hover_text">
+                        <div class="text">LinkedIn</div>
+                    </div>
+                </a>
+                <a class="social" href="https://github.com/polatsemih" target="_blank">
+                    <i class="fa-brands fa-square-github icon"></i>
+                    <div class="hover_triangle"></div>
+                    <div class="hover_text">
+                        <div class="text">GitHub</div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="back-to-top"><i class="fas fa-angle-up"></i></div>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>
